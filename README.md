@@ -53,6 +53,3 @@ Note: query includes **all** validated records. If you retest the same garment, 
 
 `GET /api/health`, `POST /api/contour` (multipart image), `POST /api/measurements` (JSON), `GET /api/records`.
 
-## Why v2 does not overwrite v1
-
-The table `garment_measurements_v2` is new. The prior prototype's `garments` records remain unchanged. New measurement records use UUIDs and are append-only.
